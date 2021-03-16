@@ -30,8 +30,8 @@ void PreferenceDialog::accept()
         break;
     case 1:
         // chinese
-        m_pref->language = PreferenceManager::CHINESE;
-        emit changeLocale(QLocale::Chinese);
+        m_pref->language = PreferenceManager::GREEK;
+        emit changeLocale(QLocale::Greek);
         break;
     default:
         break;

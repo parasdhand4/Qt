@@ -8,7 +8,7 @@ class PreferenceManager
 public:
     enum Language {
         ENGLISH,
-        CHINESE
+        GREEK
     };
     PreferenceManager();
     PreferenceManager(const QJsonObject&);

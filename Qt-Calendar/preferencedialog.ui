@@ -35,7 +35,12 @@
        </item>
        <item>
         <property name="text">
-         <string>中文</string>
+         <string>Greek</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
         </property>
        </item>
       </widget>

@@ -17,8 +17,8 @@ PreferenceManager::PreferenceManager(const QJsonObject & json)
     case ENGLISH:
         language = ENGLISH;
         break;
-    case CHINESE:
-        language = CHINESE;
+    case GREEK:
+        language = GREEK;
         break;
     default:
         language = getDefaultLanguage();
@@ -52,8 +52,8 @@ QJsonObject PreferenceManager::toJson()
 
 PreferenceManager::Language PreferenceManager::getDefaultLanguage()
 {
-    if (QLocale::system() == QLocale::Chinese) {
-        return CHINESE;
+    if (QLocale::system() == QLocale::Greek) {
+        return GREEK;
     }
     return ENGLISH;
 }

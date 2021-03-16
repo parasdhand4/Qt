@@ -48,6 +48,7 @@ public:
         comboBox_language = new QComboBox(PreferenceDialog);
         comboBox_language->addItem(QString());
         comboBox_language->addItem(QString());
+        comboBox_language->addItem(QString());
         comboBox_language->setObjectName(QString::fromUtf8("comboBox_language"));
 
         gridLayout->addWidget(comboBox_language, 0, 1, 1, 1);
@@ -96,7 +97,8 @@ public:
         PreferenceDialog->setWindowTitle(QApplication::translate("PreferenceDialog", "Preferences", nullptr));
         label_language->setText(QApplication::translate("PreferenceDialog", "Language: ", nullptr));
         comboBox_language->setItemText(0, QApplication::translate("PreferenceDialog", "English", nullptr));
-        comboBox_language->setItemText(1, QApplication::translate("PreferenceDialog", "\344\270\255\346\226\207", nullptr));
+        comboBox_language->setItemText(1, QApplication::translate("PreferenceDialog", "Greek", nullptr));
+        comboBox_language->setItemText(2, QString());
 
         label_startOfWeek->setText(QApplication::translate("PreferenceDialog", "Start of Week:", nullptr));
         comboBox_startOfWeek->setItemText(0, QApplication::translate("PreferenceDialog", "Monday", nullptr));

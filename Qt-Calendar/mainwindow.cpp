@@ -31,8 +31,8 @@ MainWindow::MainWindow(ConfigLoader* config, QWidget *parent) :
     case PreferenceManager::ENGLISH:
         localeChanged(QLocale::English);
         break;
-    case PreferenceManager::CHINESE:
-        localeChanged(QLocale::Chinese);
+    case PreferenceManager::GREEK:
+        localeChanged(QLocale::Greek);
         break;
     }
 
